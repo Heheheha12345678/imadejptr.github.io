@@ -42,10 +42,10 @@
             style="display: block; margin-left: auto; margin-right: auto;" class="logo-main"></abbr>
     <ul id="nav">
         <li><a href="/">Home</a></li>
-        <li><a href="./games.html">Games</a></li>
-        <li><a href="./apps.html">Apps</a></li>
-        <li><a href="./settings.html">Settings</a></li>
-        <li><a href="./partners.html">Partners</a></li>
+        <li><a href="/imadejptr.github.io/games.html">Games</a></li>
+        <li><a href="/imadejptr.github.io/apps.html">Apps</a></li>
+        <li><a href="/imadejptr.github.io/settings.html">Settings</a></li>
+        <li><a href="/imadejptr.github.io/partners.html">Partners</a></li>
         <li><a href="https://forms.gle/csD87Y58jERSKVS7A" target="_blank">Suggestions</a></li>
         <li><a onclick="RandomGame();">Random</a></li>
     </ul>
@@ -61,11 +61,11 @@
         </div>
         <p class="social-footer-menu">
             <a class="f-badge" style="text-decoration: none;" href="/about">About</a> // <a class="f-badge"
-                style="text-decoration: none;" href="./privacy">Privacy Policy</a> // <a class="f-badge"
-                style="text-decoration: none;" href="./terms">Terms &amp; Conditions</a> // <a class="f-badge"
-                style="text-decoration: none;" href="./logs">Logs</a> // <a class="f-badge"
-                style="text-decoration: none;" href="./dmca">DMCA</a> // <a class="f-badge"
-                style="text-decoration: none;" href="./sites">Mirror Sites</a> //
+                style="text-decoration: none;" href="/imadejptr.github.io/privacy">Privacy Policy</a> // <a class="f-badge"
+                style="text-decoration: none;" href="/imadejptr.github.io/terms">Terms &amp; Conditions</a> // <a class="f-badge"
+                style="text-decoration: none;" href="/imadejptr.github.io/logs">Logs</a> // <a class="f-badge"
+                style="text-decoration: none;" href="/imadejptr.github.io/dmca">DMCA</a> // <a class="f-badge"
+                style="text-decoration: none;" href="/imadejptr.github.io/sites">Mirror Sites</a> //
             <a>All games are made from other publishers</a> // <span>imadejptr 2022-2024</span>
         </p>
     </center>
@@ -75,7 +75,7 @@
     const params = new URLSearchParams(window.location.search)
     let games;
     if (params.get("id")) {
-        fetch("./assets/json/apps.json")
+        fetch("/imadejptr.github.io/assets/json/apps.json")
             .then(function (response) {
                 return response.json();
             })
@@ -103,7 +103,7 @@
     }
 </script>
 
-<script src="./assets/js/main.js"></script>
-<script src="./assets/js/rand.js"></script>
+<script src="/imadejptr.github.io/assets/js/main.js"></script>
+<script src="/imadejptr.github.io/assets/js/rand.js"></script>
 
 </html>
