@@ -64,10 +64,10 @@
       style="display: block; margin-left: auto; margin-right: auto;" class="logo-main"></abbr>
   <ul id="nav">
     <li><a href="/">Home</a></li>
-    <li><a href="/games.html">Games</a></li>
-    <li><a href="/apps.html">Apps</a></li>
-    <li><a href="/settings.html">Settings</a></li>
-    <li><a href="/partners.html">Partners</a></li>
+    <li><a href="./games.html">Games</a></li>
+    <li><a href="./apps.html">Apps</a></li>
+    <li><a href="./settings.html">Settings</a></li>
+    <li><a href="./partners.html">Partners</a></li>
     <li><a href="https://forms.gle/csD87Y58jERSKVS7A" target="_blank">Suggestions</a></li>
     <li><a onclick="RandomGame();">Random</a></li>
   </ul>
@@ -101,11 +101,11 @@
       <ul class="list" id="gr"></ul>
     </div>
     <p class="social-footer-menu">
-      <a class="f-badge" style="text-decoration: none;" href="/about.html">About</a> // <a class="f-badge"
-        style="text-decoration: none;" href="/privacy.html">Privacy Policy</a> // <a class="f-badge"
-        style="text-decoration: none;" href="/terms.html">Terms &amp; Conditions</a> // <a class="f-badge"
-        style="text-decoration: none;" href="/logs.html">Logs</a> // <a class="f-badge" style="text-decoration: none;"
-        href="/dmca.html">DMCA</a> // <a class="f-badge" style="text-decoration: none;" href="/sites.html">Mirror
+      <a class="f-badge" style="text-decoration: none;" href="./about.html">About</a> // <a class="f-badge"
+        style="text-decoration: none;" href="./privacy.html">Privacy Policy</a> // <a class="f-badge"
+        style="text-decoration: none;" href="./terms.html">Terms &amp; Conditions</a> // <a class="f-badge"
+        style="text-decoration: none;" href="./logs.html">Logs</a> // <a class="f-badge" style="text-decoration: none;"
+        href="./dmca.html">DMCA</a> // <a class="f-badge" style="text-decoration: none;" href="/sites.html">Mirror
         Sites</a> //
       <a>All games are made from other publishers</a> // <span>imadejptr 2022-2024</span>
     </p>
@@ -116,7 +116,7 @@
   const params = new URLSearchParams(window.location.search)
   let games;
   if (params.get("id")) {
-    fetch("/assets/json/gs.json")
+    fetch("./assets/json/gs.json")
       .then(function (response) {
         return response.json();
       })
@@ -125,17 +125,17 @@
         games.forEach(game => {
           if (game.id != params.get("id")) return
           document.title = `${game.name} / imadejptr`;
-          document.querySelector(".route").innerHTML = '<a href="/games.html">GAMES</a> / <a href="/s.html?sys=' +
+          document.querySelector(".route").innerHTML = '<a href="./games.html">GAMES</a> / <a href="./s.html?sys=' +
             game.badge + '">' + game.badge + '</a> / ' + game.name;
           document.querySelector("#gameTitle").innerHTML = game.name + " <span class='f-badge'>" + game.badge +
             "</span>";
           if (game.url == "c") {
-            document.querySelector("#frame").src = "/assets/emu/" + game.url + ".html?sys=" + game.sys + "&g=" +
+            document.querySelector("#frame").src = "./assets/emu/" + game.url + ".html?sys=" + game.sys + "&g=" +
               game.g + "&id=" + game.id + "&mc=" + game.mame;
           } else if (game.url == "u") {
-            document.querySelector("#frame").src = "/assets/unity/" + game.url + ".html?g=" + game.g;
+            document.querySelector("#frame").src = "./assets/unity/" + game.url + ".html?g=" + game.g;
           } else if (game.url == "fl") {
-            document.querySelector("#frame").src = "/assets/flash/" + game.url + ".html?g=" + game.g;
+            document.querySelector("#frame").src = "./assets/flash/" + game.url + ".html?g=" + game.g;
           } else if (game.url == "h") {
             document.querySelector("#frame").src = game.gameurl;
           }
@@ -149,7 +149,7 @@
   }
 </script>
 
-<script src="assets/js/main.js"></script>
-<script src="assets/js/rand.js"></script>
+<script src="./assets/js/main.js"></script>
+<script src="./assets/js/rand.js"></script>
 
 </html>
