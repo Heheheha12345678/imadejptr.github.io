@@ -12,7 +12,499 @@ document.body.setAttribute("t", t);
  * @description - when clicked will take the user to a random game on the website.
  */
 function RandomGame() {
-    fetch("/assets/json/gs.json")
+    fetch("<!-- 
+          _____                    _____                _____                    _____          
+         /\    \                  /\    \              /\    \                  /\    \         
+        /::\    \                /::\    \            /::\    \                /::\    \        
+        \:::\    \              /::::\    \           \:::\    \              /::::\    \       
+         \:::\    \            /::::::\    \           \:::\    \            /::::::\    \      
+          \:::\    \          /:::/\:::\    \           \:::\    \          /:::/\:::\    \     
+           \:::\    \        /:::/__\:::\    \           \:::\    \        /:::/__\:::\    \    
+           /::::\    \      /::::\   \:::\    \          /::::\    \      /::::\   \:::\    \   
+  _____   /::::::\    \    /::::::\   \:::\    \        /::::::\    \    /::::::\   \:::\    \  
+ /\    \ /:::/\:::\    \  /:::/\:::\   \:::\____\      /:::/\:::\    \  /:::/\:::\   \:::\____\ 
+/::\    /:::/  \:::\____\/:::/  \:::\   \:::|    |    /:::/  \:::\____\/:::/  \:::\   \:::|    |
+\:::\  /:::/    \::/    /\::/    \:::\  /:::|____|   /:::/    \::/    /\::/   |::::\  /:::|____|
+ \:::\/:::/    / \/____/  \/_____/\:::\/:::/    /   /:::/    / \/____/  \/____|:::::\/:::/    / 
+  \::::::/    /                    \::::::/    /   /:::/    /                 |:::::::::/    /  
+   \::::/    /                      \::::/    /   /:::/    /                  |::|\::::/    /   
+    \::/    /                        \::/____/    \::/    /                   |::| \::/____/    
+     \/____/                          ~~           \/____/                    |::|  ~|          
+                                                                              |::|   |          
+                                                                              \::|   |          
+                                                                               \:|   |          
+                                                                                \|___|          
+                                                                                                
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta content="imadejptr" property="og:title">
+  <meta content="The 2nd Iteration of JPTR. With 600+ games, you won't
+            have a boring time here" property="og:description">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="shortcut icon" type="image/x-icon"
+    href="https://du11hjcvx0uqb.cloudfront.net/dist/images/favicon-e10d657a73.ico">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-152753706-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-152753706-1');
+  </script>
+  <script data-ad-client="ca-pub-6003658983346596" crossorigin="anonymous" async
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({
+      google_ad_client: "ca-pub-6003658983346596",
+      enable_page_level_ads: true
+    });
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>imadejptr</title>
+</head>
+
+<body>
+  <abbr title="made by @marcopetrildesigns on ig <3"><img
+      src="https://cdn.glitch.global/a65741ca-e4a3-4b9c-9f87-1568672f0160/logo.png" width="10%"
+      style="display: block; margin-left: auto; margin-right: auto;" class="logo-main"></abbr>
+  <ul id="nav">
+    <li><a href="/">Home</a></li>
+    <li><a href="/imadejptr.github.io/games.html">Games</a></li>
+    <li><a href="/imadejptr.github.io/apps.html">Apps</a></li>
+    <li><a href="/imadejptr.github.io/settings.html">Settings</a></li>
+    <li><a href="/imadejptr.github.io/partners.html">Partners</a></li>
+    <li><a href="https://forms.gle/csD87Y58jERSKVS7A" target="_blank">Suggestions</a></li>
+    <li><a onclick="RandomGame();">Random</a></li>
+  </ul>
+  <div class="group2">
+    <br>
+    <h1 id="libtot"></h1>
+    <input id="search" placeholder="Search for Games...">
+    <br>
+    <ul class="list" id="aps"></ul>
+  </div>
+  <p class="social-footer-menu">
+    <a class="f-badge" style="text-decoration: none;" href="/imadejptr.github.io/about.html">About</a> // <a class="f-badge"
+      style="text-decoration: none;" href="/imadejptr.github.io/privacy.html">Privacy Policy</a> // <a class="f-badge"
+      style="text-decoration: none;" href="/imadejptr.github.io/terms.html">Terms &amp; Conditions</a> // <a class="f-badge"
+      style="text-decoration: none;" href="<!-- 
+          _____                    _____                _____                    _____          
+         /\    \                  /\    \              /\    \                  /\    \         
+        /::\    \                /::\    \            /::\    \                /::\    \        
+        \:::\    \              /::::\    \           \:::\    \              /::::\    \       
+         \:::\    \            /::::::\    \           \:::\    \            /::::::\    \      
+          \:::\    \          /:::/\:::\    \           \:::\    \          /:::/\:::\    \     
+           \:::\    \        /:::/__\:::\    \           \:::\    \        /:::/__\:::\    \    
+           /::::\    \      /::::\   \:::\    \          /::::\    \      /::::\   \:::\    \   
+  _____   /::::::\    \    /::::::\   \:::\    \        /::::::\    \    /::::::\   \:::\    \  
+ /\    \ /:::/\:::\    \  /:::/\:::\   \:::\____\      /:::/\:::\    \  /:::/\:::\   \:::\____\ 
+/::\    /:::/  \:::\____\/:::/  \:::\   \:::|    |    /:::/  \:::\____\/:::/  \:::\   \:::|    |
+\:::\  /:::/    \::/    /\::/    \:::\  /:::|____|   /:::/    \::/    /\::/   |::::\  /:::|____|
+ \:::\/:::/    / \/____/  \/_____/\:::\/:::/    /   /:::/    / \/____/  \/____|:::::\/:::/    / 
+  \::::::/    /                    \::::::/    /   /:::/    /                 |:::::::::/    /  
+   \::::/    /                      \::::/    /   /:::/    /                  |::|\::::/    /   
+    \::/    /                        \::/____/    \::/    /                   |::| \::/____/    
+     \/____/                          ~~           \/____/                    |::|  ~|          
+                                                                              |::|   |          
+                                                                              \::|   |          
+                                                                               \:|   |          
+                                                                                \|___|          
+                                                                                                
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta content="imadejptr" property="og:title">
+  <meta content="The 2nd Iteration of JPTR. With 600+ games, you won't
+            have a boring time here" property="og:description">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="shortcut icon" type="image/x-icon"
+    href="https://du11hjcvx0uqb.cloudfront.net/dist/images/favicon-e10d657a73.ico">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-152753706-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-152753706-1');
+  </script>
+  <script data-ad-client="ca-pub-6003658983346596" crossorigin="anonymous" async
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({
+      google_ad_client: "ca-pub-6003658983346596",
+      enable_page_level_ads: true
+    });
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>imadejptr</title>
+</head>
+
+<body>
+  <abbr title="made by @marcopetrildesigns on ig <3"><img
+      src="https://cdn.glitch.global/a65741ca-e4a3-4b9c-9f87-1568672f0160/logo.png" width="10%"
+      style="display: block; margin-left: auto; margin-right: auto;" class="logo-main"></abbr>
+  <ul id="nav">
+    <li><a href="/">Home</a></li>
+    <li><a href="/imadejptr.github.io/games.html">Games</a></li>
+    <li><a href="/imadejptr.github.io/apps.html">Apps</a></li>
+    <li><a href="/imadejptr.github.io/settings.html">Settings</a></li>
+    <li><a href="/imadejptr.github.io/partners.html">Partners</a></li>
+    <li><a href="https://forms.gle/csD87Y58jERSKVS7A" target="_blank">Suggestions</a></li>
+    <li><a onclick="RandomGame();">Random</a></li>
+  </ul>
+  <div class="group2">
+    <br>
+    <h1 id="libtot"></h1>
+    <input id="search" placeholder="Search for Games...">
+    <br>
+    <ul class="list" id="aps"></ul>
+  </div>
+  <p class="social-footer-menu">
+    <a class="f-badge" style="text-decoration: none;" href="/imadejptr.github.io/about.html">About</a> // <a class="f-badge"
+      style="text-decoration: none;" href="/imadejptr.github.io/privacy.html">Privacy Policy</a> // <a class="f-badge"
+      style="text-decoration: none;" href="/imadejptr.github.io/terms.html">Terms &amp; Conditions</a> // <a class="f-badge"
+      style="text-decoration: none;" href="/logs.html">Logs</a> // <a class="f-badge" style="text-decoration: none;"
+      href="/imadejptr.github.io/dmca.html">DMCA</a> // <a class="f-badge" style="text-decoration: none;" href="/imadejptr.github.io/sites.html">Mirror Sites</a> //
+    <a>All games are made from other publishers</a> // <span>imadejptr 2022-2024</span>
+  </p>
+</body>
+<script src="/imadejptr.github.io/assets/js/main.js"></script>
+<script src="/imadejptr.github.io/assets/js/jquery-3.7.1.min.js"></script>
+<script>
+  const params = new URLSearchParams(window.location.search);
+  let cum = params.get("sys");
+  const data = fetch("/imadejptr.github.io/assets/json/apps.json")
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (data) {
+      systems(data);
+    })
+    .catch(function (err) {
+      console.log("error: " + err);
+    });
+
+  function systems(data) {
+    data.sort(function (a, b) {
+      a = a.name.toLowerCase();
+      b = b.name.toLowerCase();
+
+      return a < b ? -1 : a > b ? 1 : 0;
+    });
+    $(document).ready(function () {
+      $.ajaxSetup({
+        cache: false
+      });
+      $('#search').keyup(function () {
+        $('#gs').html('');
+        $('#name').val('');
+        let searchField = $('#search').val();
+        let expression = new RegExp(searchField, "i");
+        $.each(data, function (key, valu) {
+          if (valu.name.search(expression) != -1) {
+            $('#gs').append("<li><a href=/imadejptr.github.io/go.html?id=" +
+              valu.id +
+              ' class="box"><img src="https://cdn.glitch.global/a65741ca-e4a3-4b9c-9f87-1568672f0160/' +
+              valu.id +
+              '.' +
+              valu.img +
+              '" data-loaded="true"><div class="badge">' +
+              valu.badge +
+              '</div><span class="box-title">' +
+              valu.name +
+              "</span></a></li>");
+          }
+        });
+      });
+    });
+    let mainContainer = document.getElementById("aps");
+    for (let i = 0; i <= data.length; i++) {
+      let div = document.createElement("li");
+      div.innerHTML =
+        "<a href=/imadejptr.github.io/go2.html?id=" +
+        data[i].id +
+        ' class="box"><img src="https://cdn.glitch.global/a65741ca-e4a3-4b9c-9f87-1568672f0160/' +
+        data[i].img +
+        '" data-loaded="true"><div class="badge">' +
+        data[i].badge +
+        '</div><span class="box-title">' +
+        data[i].name +
+        "</span></a>";
+      mainContainer.appendChild(div);
+      count();
+    }
+
+    function count() {
+      document.getElementById("libtot").innerHTML = "There are " + data.length + " apps to choose from!";
+    }
+  }
+</script>
+
+</html>
+
+
+<!-- 
+          _____                    _____                _____                    _____          
+         /\    \                  /\    \              /\    \                  /\    \         
+        /::\    \                /::\    \            /::\    \                /::\    \        
+        \:::\    \              /::::\    \           \:::\    \              /::::\    \       
+         \:::\    \            /::::::\    \           \:::\    \            /::::::\    \      
+          \:::\    \          /:::/\:::\    \           \:::\    \          /:::/\:::\    \     
+           \:::\    \        /:::/__\:::\    \           \:::\    \        /:::/__\:::\    \    
+           /::::\    \      /::::\   \:::\    \          /::::\    \      /::::\   \:::\    \   
+  _____   /::::::\    \    /::::::\   \:::\    \        /::::::\    \    /::::::\   \:::\    \  
+ /\    \ /:::/\:::\    \  /:::/\:::\   \:::\____\      /:::/\:::\    \  /:::/\:::\   \:::\____\ 
+/::\    /:::/  \:::\____\/:::/  \:::\   \:::|    |    /:::/  \:::\____\/:::/  \:::\   \:::|    |
+\:::\  /:::/    \::/    /\::/    \:::\  /:::|____|   /:::/    \::/    /\::/   |::::\  /:::|____|
+ \:::\/:::/    / \/____/  \/_____/\:::\/:::/    /   /:::/    / \/____/  \/____|:::::\/:::/    / 
+  \::::::/    /                    \::::::/    /   /:::/    /                 |:::::::::/    /  
+   \::::/    /                      \::::/    /   /:::/    /                  |::|\::::/    /   
+    \::/    /                        \::/____/    \::/    /                   |::| \::/____/    
+     \/____/                          ~~           \/____/                    |::|  ~|          
+                                                                              |::|   |          
+                                                                              \::|   |          
+                                                                               \:|   |          
+                                                                                \|___|          
+                                                                                                
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta content="imadejptr" property="og:title">
+  <meta content="The 2nd Iteration of JPTR. With 600+ games, you won't
+            have a boring time here" property="og:description">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="shortcut icon" type="image/x-icon"
+    href="https://du11hjcvx0uqb.cloudfront.net/dist/images/favicon-e10d657a73.ico">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-152753706-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-152753706-1');
+  </script>
+  <script data-ad-client="ca-pub-6003658983346596" crossorigin="anonymous" async
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({
+      google_ad_client: "ca-pub-6003658983346596",
+      enable_page_level_ads: true
+    });
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>imadejptr</title>
+</head>
+
+<body>
+  <abbr title="made by @marcopetrildesigns on ig <3"><img
+      src="https://cdn.glitch.global/a65741ca-e4a3-4b9c-9f87-1568672f0160/logo.png" width="10%"
+      style="display: block; margin-left: auto; margin-right: auto;" class="logo-main"></abbr>
+  <ul id="nav">
+    <li><a href="/">Home</a></li>
+    <li><a href="/imadejptr.github.io/games.html">Games</a></li>
+    <li><a href="/imadejptr.github.io/apps.html">Apps</a></li>
+    <li><a href="/imadejptr.github.io/settings.html">Settings</a></li>
+    <li><a href="/imadejptr.github.io/partners.html">Partners</a></li>
+    <li><a href="https://forms.gle/csD87Y58jERSKVS7A" target="_blank">Suggestions</a></li>
+    <li><a onclick="RandomGame();">Random</a></li>
+  </ul>
+  <div class="group2">
+    <br>
+    <h1 id="libtot"></h1>
+    <input id="search" placeholder="Search for Games...">
+    <br>
+    <ul class="list" id="aps"></ul>
+  </div>
+  <p class="social-footer-menu">
+    <a class="f-badge" style="text-decoration: none;" href="/imadejptr.github.io/about.html">About</a> // <a class="f-badge"
+      style="text-decoration: none;" href="/imadejptr.github.io/privacy.html">Privacy Policy</a> // <a class="f-badge"
+      style="text-decoration: none;" href="/imadejptr.github.io/terms.html">Terms &amp; Conditions</a> // <a class="f-badge"
+      style="text-decoration: none;" href="/logs.html">Logs</a> // <a class="f-badge" style="text-decoration: none;"
+      href="/imadejptr.github.io/dmca.html">DMCA</a> // <a class="f-badge" style="text-decoration: none;" href="/imadejptr.github.io/sites.html">Mirror Sites</a> //
+    <a>All games are made from other publishers</a> // <span>imadejptr 2022-2024</span>
+  </p>
+</body>
+<script src="/imadejptr.github.io/assets/js/main.js"></script>
+<script src="/imadejptr.github.io/assets/js/jquery-3.7.1.min.js"></script>
+<script>
+  const params = new URLSearchParams(window.location.search);
+  let cum = params.get("sys");
+  const data = fetch("/imadejptr.github.io/assets/json/apps.json")
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (data) {
+      systems(data);
+    })
+    .catch(function (err) {
+      console.log("error: " + err);
+    });
+
+  function systems(data) {
+    data.sort(function (a, b) {
+      a = a.name.toLowerCase();
+      b = b.name.toLowerCase();
+
+      return a < b ? -1 : a > b ? 1 : 0;
+    });
+    $(document).ready(function () {
+      $.ajaxSetup({
+        cache: false
+      });
+      $('#search').keyup(function () {
+        $('#gs').html('');
+        $('#name').val('');
+        let searchField = $('#search').val();
+        let expression = new RegExp(searchField, "i");
+        $.each(data, function (key, valu) {
+          if (valu.name.search(expression) != -1) {
+            $('#gs').append("<li><a href=/imadejptr.github.io/go.html?id=" +
+              valu.id +
+              ' class="box"><img src="https://cdn.glitch.global/a65741ca-e4a3-4b9c-9f87-1568672f0160/' +
+              valu.id +
+              '.' +
+              valu.img +
+              '" data-loaded="true"><div class="badge">' +
+              valu.badge +
+              '</div><span class="box-title">' +
+              valu.name +
+              "</span></a></li>");
+          }
+        });
+      });
+    });
+    let mainContainer = document.getElementById("aps");
+    for (let i = 0; i <= data.length; i++) {
+      let div = document.createElement("li");
+      div.innerHTML =
+        "<a href=/imadejptr.github.io/go2.html?id=" +
+        data[i].id +
+        ' class="box"><img src="https://cdn.glitch.global/a65741ca-e4a3-4b9c-9f87-1568672f0160/' +
+        data[i].img +
+        '" data-loaded="true"><div class="badge">' +
+        data[i].badge +
+        '</div><span class="box-title">' +
+        data[i].name +
+        "</span></a>";
+      mainContainer.appendChild(div);
+      count();
+    }
+
+    function count() {
+      document.getElementById("libtot").innerHTML = "There are " + data.length + " apps to choose from!";
+    }
+  }
+</script>
+
+</html>
+
+
+/imadejptr.github.io/logs.html">Logs</a> // <a class="f-badge" style="text-decoration: none;"
+      href="/imadejptr.github.io/dmca.html">DMCA</a> // <a class="f-badge" style="text-decoration: none;" href="/imadejptr.github.io/sites.html">Mirror Sites</a> //
+    <a>All games are made from other publishers</a> // <span>imadejptr 2022-2024</span>
+  </p>
+</body>
+<script src="/imadejptr.github.io/assets/js/main.js"></script>
+<script src="/imadejptr.github.io/assets/js/jquery-3.7.1.min.js"></script>
+<script>
+  const params = new URLSearchParams(window.location.search);
+  let cum = params.get("sys");
+  const data = fetch("/imadejptr.github.io/assets/json/apps.json")
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (data) {
+      systems(data);
+    })
+    .catch(function (err) {
+      console.log("error: " + err);
+    });
+
+  function systems(data) {
+    data.sort(function (a, b) {
+      a = a.name.toLowerCase();
+      b = b.name.toLowerCase();
+
+      return a < b ? -1 : a > b ? 1 : 0;
+    });
+    $(document).ready(function () {
+      $.ajaxSetup({
+        cache: false
+      });
+      $('#search').keyup(function () {
+        $('#gs').html('');
+        $('#name').val('');
+        let searchField = $('#search').val();
+        let expression = new RegExp(searchField, "i");
+        $.each(data, function (key, valu) {
+          if (valu.name.search(expression) != -1) {
+            $('#gs').append("<li><a href=/imadejptr.github.io/go.html?id=" +
+              valu.id +
+              ' class="box"><img src="https://cdn.glitch.global/a65741ca-e4a3-4b9c-9f87-1568672f0160/' +
+              valu.id +
+              '.' +
+              valu.img +
+              '" data-loaded="true"><div class="badge">' +
+              valu.badge +
+              '</div><span class="box-title">' +
+              valu.name +
+              "</span></a></li>");
+          }
+        });
+      });
+    });
+    let mainContainer = document.getElementById("aps");
+    for (let i = 0; i <= data.length; i++) {
+      let div = document.createElement("li");
+      div.innerHTML =
+        "<a href=/imadejptr.github.io/go2.html?id=" +
+        data[i].id +
+        ' class="box"><img src="https://cdn.glitch.global/a65741ca-e4a3-4b9c-9f87-1568672f0160/' +
+        data[i].img +
+        '" data-loaded="true"><div class="badge">' +
+        data[i].badge +
+        '</div><span class="box-title">' +
+        data[i].name +
+        "</span></a>";
+      mainContainer.appendChild(div);
+      count();
+    }
+
+    function count() {
+      document.getElementById("libtot").innerHTML = "There are " + data.length + " apps to choose from!";
+    }
+  }
+</script>
+
+</html>
+
+
+/imadejptr.github.io/assets/json/gs.json")
         .then(function (response) {
             return response.json();
         })
@@ -33,7 +525,7 @@ function RandomGame() {
         let rand = Math.floor(Math.random() * (data.length + 1));
         // then it sends the user to the id of the random value that is generated from rand.
         location.href =
-            "/go.html?id=" + data[rand].id;
+            "/imadejptr.github.io/go.html?id=" + data[rand].id;
     }
 
 }
@@ -50,12 +542,7 @@ function freep0rn() {
     document.body.style = "";
     localStorage.removeItem("theme_color");
     console.log("                                                                \n▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒                      \n░░░░░░          ▒▒▒▒▒▒▒▒░░░░░░░░░░▒▒▒▒▒▒▒▒                  \n░░░░░░░░░░░░    ▒▒▒▒▒▒▒▒▒▒▒▒░░░░░░▒▒▒▒▒▒▒▒▒▒▒▒                \n░░░░░░░░░░░░  ░░  ▒▒▒▒░░░░░░░░░░░░░░░░░░▒▒▒▒                  \n░░░░░░░░░░░░░░░░    ░░██████████████████░░                    \n░░░░░░░░░░░░░░░░  ░░██████████████████████░░                  \n░░░░░░░░░░░░░░    ░░░░░░██████████████░░░░░░                  \n░░░░░░░░░░░░░░░░  ░░░░▒▒░░▒▒░░░░░░▒▒░░▒▒░░░░                  \n░░░░░░░░░░░░░░░░    ░░░░▒▒░░▒▒▒▒▒▒░░▒▒░░░░                    \n░░░░░░░░░░░░▒▒▒▒▒▒  ░░▒▒░░░░░░░░░░░░░░▒▒░░▒▒▒▒▒▒▒▒▒▒          \n░░▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒░░░░░░░░░░░░░░░░░░░░░░▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒    \n  ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒░░░░░░░░░░░░░░░░░░░░░░▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒  \n    ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒░░░░░░░░░░░░░░▒▒▒▒▒▒░░▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒\n      ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒░░░░░░▒▒▒▒▒▒▒▒▒▒▒▒▒▒\n        ▒▒▒▒▒▒▒▒▒▒▒▒▒▒░░░░▒▒▒▒░░░░▒▒▒▒░░░░░░░░░░▒▒▒▒▒▒▒▒▒▒▒▒\n      ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒░░░░▒▒▒▒░░░░▒▒▒▒▒▒░░▒▒░░▒▒▒▒▒▒▒▒▒▒▒▒▒▒\n      ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒  \n      ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒░░░░▒▒▒▒░░░░▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒    \n      ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒░░░░▒▒▒▒░░░░▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒      \n    ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒████  \n    ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒░░░░▒▒▒▒░░░░▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒██████\n    ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒░░░░▒▒▒▒░░░░▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒██████\n    ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒████  \n      ▒▒██████████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒██████████▒▒        \n      ██████████████████        ████████████████████        \n      ██████████████████        ████████████████████        \n      ██████████████████        ████████████████████        \n    ██████████████████            ████████████████████      \n  ████████████████████            ██████████████████████    \n                                                            ");
-    console.log("%cWEE WOO WEE WOO, YOUR UNDER ARREST!", "font-size:36px;color: red");
-    console.log("%cSir, I must send you to the gulag. You are being charged for the amount of dumb and awful decisions you just made.", "color: white");
-    console.log("%cNow I can't arrest you right now because I'm currently on break and this is my me time.", "color: white");
-    console.log("%cSo as punishment for the time being, your theme will be what YOU ARE.", "color: white");
-    console.log("%cstop requesting p0rn you feens, or else oli will arrest ya! :<", "font-size:10px;")
-}
+    console.log("
 
 /**
  * This is the 2nd easter egg on the site.
@@ -81,7 +568,7 @@ function luma() {
  * This is done so that there isn't a huge amount of errors because of it not being used in other pages.
  */
 if (document.body.classList.contains("cats")) {
-    const bobbo = fetch("/assets/json/twothree.json")
+    const bobbo = fetch("/imadejptr.github.io/assets/json/twothree.json")
         .then(function (response) {
             return response.json();
         })
@@ -102,7 +589,7 @@ if (document.body.classList.contains("cats")) {
         for (let i = 0; i < 100; i++) {
             let div = document.createElement("li");
             div.innerHTML =
-                "<a href=/go.html?id=" +
+                "<a href=/imadejptr.github.io/go.html?id=" +
                 bobbo[i].id +
                 ' class="box"><img src="https://cdn.glitch.global/a65741ca-e4a3-4b9c-9f87-1568672f0160/' +
                 bobbo[i].id +
@@ -117,7 +604,7 @@ if (document.body.classList.contains("cats")) {
         }
     }
 
-    const coopie = fetch("/assets/json/gs.json")
+    const coopie = fetch("/imadejptr.github.io/assets/json/gs.json")
         .then(function (response) {
             return response.json();
         })
@@ -143,7 +630,7 @@ if (document.body.classList.contains("cats")) {
             if (coopie[i].new == "true") {
                 div.className = "new-class";
                 div.innerHTML =
-                    "<a href=/go.html?id=" +
+                    "<a href=/imadejptr.github.io/go.html?id=" +
                     coopie[i].id +
                     ' class="box"><img src="https://cdn.glitch.global/a65741ca-e4a3-4b9c-9f87-1568672f0160/' +
                     coopie[i].id +
@@ -158,7 +645,7 @@ if (document.body.classList.contains("cats")) {
                 newG.appendChild(div);
             } else {
                 div.innerHTML =
-                    "<a href=/go.html?id=" +
+                    "<a href=/imadejptr.github.io/go.html?id=" +
                     coopie[i].id +
                     ' class="box"><img src="https://cdn.glitch.global/a65741ca-e4a3-4b9c-9f87-1568672f0160/' +
                     coopie[i].id +
@@ -174,7 +661,7 @@ if (document.body.classList.contains("cats")) {
         }
     }
 
-    const chirpy = fetch("/assets/json/pc.json")
+    const chirpy = fetch("/imadejptr.github.io/assets/json/pc.json")
         .then(function (response) {
             return response.json();
         })
@@ -195,7 +682,7 @@ if (document.body.classList.contains("cats")) {
         for (let i = 0; i <= chirpy.length; i++) {
             let div = document.createElement("li");
             div.innerHTML =
-                "<a href=/go.html?id=" +
+                "<a href=/imadejptr.github.io/go.html?id=" +
                 chirpy[i].id +
                 ' class="box"><img src="https://cdn.glitch.global/a65741ca-e4a3-4b9c-9f87-1568672f0160/' +
                 chirpy[i].id +
