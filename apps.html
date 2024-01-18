@@ -64,10 +64,10 @@
       style="display: block; margin-left: auto; margin-right: auto;" class="logo-main"></abbr>
   <ul id="nav">
     <li><a href="/">Home</a></li>
-    <li><a href="/games.html">Games</a></li>
-    <li><a href="/apps.html">Apps</a></li>
-    <li><a href="/settings.html">Settings</a></li>
-    <li><a href="/partners.html">Partners</a></li>
+    <li><a href="/imadejptr.github.io/games.html">Games</a></li>
+    <li><a href="/imadejptr.github.io/apps.html">Apps</a></li>
+    <li><a href="/imadejptr.github.io/settings.html">Settings</a></li>
+    <li><a href="/imadejptr.github.io/partners.html">Partners</a></li>
     <li><a href="https://forms.gle/csD87Y58jERSKVS7A" target="_blank">Suggestions</a></li>
     <li><a onclick="RandomGame();">Random</a></li>
   </ul>
@@ -79,20 +79,20 @@
     <ul class="list" id="aps"></ul>
   </div>
   <p class="social-footer-menu">
-    <a class="f-badge" style="text-decoration: none;" href="/about.html">About</a> // <a class="f-badge"
-      style="text-decoration: none;" href="/privacy.html">Privacy Policy</a> // <a class="f-badge"
-      style="text-decoration: none;" href="/terms.html">Terms &amp; Conditions</a> // <a class="f-badge"
+    <a class="f-badge" style="text-decoration: none;" href="/imadejptr.github.io/about.html">About</a> // <a class="f-badge"
+      style="text-decoration: none;" href="/imadejptr.github.io/privacy.html">Privacy Policy</a> // <a class="f-badge"
+      style="text-decoration: none;" href="/imadejptr.github.io/terms.html">Terms &amp; Conditions</a> // <a class="f-badge"
       style="text-decoration: none;" href="/logs.html">Logs</a> // <a class="f-badge" style="text-decoration: none;"
-      href="/dmca.html">DMCA</a> // <a class="f-badge" style="text-decoration: none;" href="/sites.html">Mirror Sites</a> //
+      href="/imadejptr.github.io/dmca.html">DMCA</a> // <a class="f-badge" style="text-decoration: none;" href="/imadejptr.github.io/sites.html">Mirror Sites</a> //
     <a>All games are made from other publishers</a> // <span>imadejptr 2022-2024</span>
   </p>
 </body>
-<script src="assets/js/main.js"></script>
-<script src="assets/js/jquery-3.7.1.min.js"></script>
+<script src="/imadejptr.github.io/assets/js/main.js"></script>
+<script src="/imadejptr.github.io/assets/js/jquery-3.7.1.min.js"></script>
 <script>
   const params = new URLSearchParams(window.location.search);
   let cum = params.get("sys");
-  const data = fetch("/assets/json/apps.json")
+  const data = fetch("/imadejptr.github.io/assets/json/apps.json")
     .then(function (response) {
       return response.json();
     })
@@ -140,7 +140,7 @@
     for (let i = 0; i <= data.length; i++) {
       let div = document.createElement("li");
       div.innerHTML =
-        "<a href=/go2.html?id=" +
+        "<a href=/imadejptr.github.io/go2.html?id=" +
         data[i].id +
         ' class="box"><img src="https://cdn.glitch.global/a65741ca-e4a3-4b9c-9f87-1568672f0160/' +
         data[i].img +
