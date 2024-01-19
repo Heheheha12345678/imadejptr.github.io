@@ -5,7 +5,7 @@
  * This generates every single game and is used on all.html.
  */
 
-const data = fetch("/assets/json/gs.json")
+const data = fetch("/imadejptr.github.io/assets/json/gs.json")
     .then(function (response) {
         return response.json();
     })
@@ -35,7 +35,7 @@ function search(data) {
             $.each(data, function (key, valu) {
                 if (valu.name.search(expression) != -1) {
                     if (valu.new == "true") {
-                        $('#gs').append('<li><a href=/go.html?id=' +
+                        $('#gs').append('<li><a href=/imadejptr.github.io/go.html?id=' +
                             valu.id +
                             ' class="box"><img src="https://cdn.glitch.global/a65741ca-e4a3-4b9c-9f87-1568672f0160/' +
                             valu.id +
@@ -48,7 +48,7 @@ function search(data) {
                             valu.name +
                             "</span></a></li>");
                     } else {
-                        $('#gs').append("<li><a href=/go.html?id=" +
+                        $('#gs').append("<li><a href=/imadejptr.github.io/go.html?id=" +
                             valu.id +
                             ' class="box"><img src="https://cdn.glitch.global/a65741ca-e4a3-4b9c-9f87-1568672f0160/' +
                             valu.id +
@@ -69,7 +69,7 @@ function search(data) {
         var div = document.createElement("li");
         if (data[i].new == "true") {
             div.innerHTML =
-                "<a href=/go.html?id=" +
+                "<a href=/imadejptr.github.io/go.html?id=" +
                 data[i].id +
                 ' class="box"><img src="https://cdn.glitch.global/a65741ca-e4a3-4b9c-9f87-1568672f0160/' +
                 data[i].id +
@@ -84,7 +84,7 @@ function search(data) {
             mainContainer.appendChild(div);
         } else {
             div.innerHTML =
-                "<a href=/go.html?id=" +
+                "<a href=/imadejptr.github.io/go.html?id=" +
                 data[i].id +
                 ' class="box"><img src="https://cdn.glitch.global/a65741ca-e4a3-4b9c-9f87-1568672f0160/' +
                 data[i].id +
