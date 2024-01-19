@@ -89,8 +89,8 @@
 <script src="/imadejptr.github.io/assets/js/main.js"></script>
 <script>
   // This is responsible for generating the system options when the user enters games.html
-  // this originally lied in the main.js file, but felt unnecessary since it was only used on this page.
-  fetch("/assets/json/systems.json")
+  //This originally lied in the main.js file, but felt unnecessary since it was only used on this page.
+  fetch("/imadejptr.github.io/assets/json/systems.json")
     .then((res) => res.json())
     .then((data_systems) => {
       sys = data_systems;
